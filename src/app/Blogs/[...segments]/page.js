@@ -1,10 +1,12 @@
 import React from 'react';
 
 const SingleBlogPage = ({params}) => {
-    console.log(params.id)
+    console.log(params.segments)
+
+    const [year, id] = params.segments
     return (
         <div>
-            SingleBlogPage{params.id}
+            SingleBlogPage {year} for {id}
         </div>
     );
 };
